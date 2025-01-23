@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    position: relative;
+    width: 90vw;
+    height: 50vh;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.ball{
+    position: absolute;
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+    animation: animationy 1s  ease-out infinite alternate, animationx 6s linear infinite;
+}
+@keyframes animationy {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 80%;
+    }
+}
+@keyframes animationx {
+    from{
+        left: 0;
+    }
+    to{
+        left: 91%;
+    }
+}
